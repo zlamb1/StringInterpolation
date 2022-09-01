@@ -13,10 +13,10 @@ namespace StringInterpolation
             Console.WriteLine($"{date:'Year:' yyyy, 'Month:' MM, 'Day:' dd}");
             Console.WriteLine($"{date,10:dddd}");
             Console.WriteLine($"{date,10:t}{date,10:dddd}");
-            Console.WriteLine($"{date:'h:'h, 'm:'m, 's:'s}");
-            Console.WriteLine($"{date:yyyy.MM.dd.h.m.s}");
+            Console.WriteLine($"{date:'h:'hh, 'm:'mm, 's:'ss}");
+            Console.WriteLine($"{date:yyyy.MM.dd.hh.mm.ss}");
             var pi = Math.PI;
-            Console.WriteLine($"{pi.ToString("C4")}");
+            Console.WriteLine($"{pi:C2}");
             Console.WriteLine($"{pi,10:.###}");
         }
     }
